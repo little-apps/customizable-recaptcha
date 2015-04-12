@@ -4,7 +4,7 @@ Customizable reCAPTCHA
 Customizable reCAPTCHA allows WordPress admins to use and customize the popular anti-spam solution. It includes the ability to modify the HTML, CSS, reCAPTCHA Theme and more. This plugin uses the latest version (v2) of the Google reCAPTCHA API.
 
 ### Installation ###
-The first step is to [download the ZIP archive](https://github.com/little-apps/customizable-recaptcha/archive/master.zip) from this repository to your computer. Then follow the steps listed under ``Install a Plugin using Upload Method in WordPress Admin Panel`` in [this guide](http://www.wpbeginner.com/beginners-guide/step-by-step-guide-to-install-a-wordpress-plugin-for-beginners/) on installing plugins in Wordpress.
+The first step is to [download the ZIP archive](https://github.com/little-apps/customizable-recaptcha/archive/master.zip) from this repository to your computer. Then follow the steps listed under ``Install a Plugin using Upload Method in WordPress Admin Panel`` in [this guide](http://www.wpbeginner.com/beginners-guide/step-by-step-guide-to-install-a-wordpress-plugin-for-beginners/) on installing plugins in Wordpress. You will need to signup for [Google reCAPTCHA](https://www.google.com/recaptcha/admin) and have a public and private key (from Google reCAPTCHA) in order for this plugin to work.
 	
 ### Todo ###
  - Add ability to change error messages
