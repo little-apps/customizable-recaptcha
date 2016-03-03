@@ -321,7 +321,7 @@ class WPGRecaptcha {
     }
 	
     public function admin_init() {
-		if ( $this->cf7_loaded && function_exists( 'wpcf7_add_tag_generator' ) ) {
+		if ( $this->cf7_loaded() && function_exists( 'wpcf7_add_tag_generator' ) ) {
 			wpcf7_add_tag_generator(
 				'customizable-recaptcha',
 				'Customizable reCAPTCHA', // this string needs no translation
