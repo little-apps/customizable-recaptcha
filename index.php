@@ -93,7 +93,7 @@ class WPGRecaptcha {
 			
 			if ( $this->options->enable_login ) {
 				add_action( 'login_form', array( $this, 'display_login' ) );
-				add_action( 'authenticate', array( $this, 'check_recaptcha_login' ), 22 );
+				add_filter( 'authenticate', array( $this, 'check_recaptcha_login' ), 22 );
 			}
 			
 			if ( $this->options->enable_lostpassword ) {
