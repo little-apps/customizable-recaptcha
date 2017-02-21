@@ -83,6 +83,10 @@ class WPGRecaptcha {
 	}
 	
 	public function init() {
+		if ( defined( 'XMLRPC_REQUEST' ) && XMLRPC_REQUEST )
+			// Disable when in XMLRPC, otherwise XMLRPC requests won't work
+			return;
+		
 		if ( !empty( $this->options->public_key ) && !empty( $this->options->private_key ) && $this->enable_for_user() ) {
 			add_action( 'wp_head', array( $this, 'custom_styles' ) );
 			
