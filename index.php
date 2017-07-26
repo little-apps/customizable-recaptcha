@@ -222,8 +222,8 @@ class WPGRecaptcha {
 		
 		if ( !$this->check_recaptcha() )
 			$errors->add( 'wpgrecaptcha_error', '<strong>' . __( 'Error' ) . '</strong>: ' . __( 'You have entered an incorrect CAPTCHA value.' ) );
-		else
-			return $errors;
+		
+		return $errors;
 	}
 	
 	public function check_recaptcha_login( $user = null ) {
