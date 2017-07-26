@@ -217,7 +217,7 @@ class WPGRecaptcha {
 	}
 	
 	public function check_recaptcha_register( $errors = null, $sanitized_user_login = '', $user_email = '' ) {
-		if ( !isset( $errors ) )
+		if ( is_null( $errors ) )
 			$errors = new WP_Error();
 		
 		if ( !$this->check_recaptcha() )
@@ -227,7 +227,7 @@ class WPGRecaptcha {
 	}
 	
 	public function check_recaptcha_login( $user = null ) {
-		if ( !isset( $user ) )
+		if ( is_null( $user ) )
 			// User isn't set so this will always fail
 			return null;
 			
